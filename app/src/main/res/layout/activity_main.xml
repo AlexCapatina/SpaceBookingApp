@@ -7,15 +7,19 @@
     tools:context=".MainActivity"
     android:background="@drawable/home_banner">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/welcomeText"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:text="Welcome to Space Booking!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068" />
-
-
+        android:textColor="#9F0101"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="53dp" />
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.widget.SearchView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
